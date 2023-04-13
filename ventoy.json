@@ -1,0 +1,112 @@
+{
+    "control":[
+        { "VTOY_FILE_FLT_EFI": "1" },
+        { "VTOY_WIN11_BYPASS_CHECK": "0" },
+        { "VTOY_MENU_TIMEOUT": "30" },
+        { "VTOY_DEFAULT_SEARCH_ROOT": "/imgs" },
+        { "VTOY_DEFAULT_IMAGE": "/imgs/linuxmint-21.1-cinnamon-64bit.iso" }
+    ],
+    "theme":{
+        "file": "/ventoy/theme/das/theme.txt",
+        "gfxmode": "1920x1080"
+    },
+    "menu_alias":[
+        {
+            "image": "/imgs/linuxmint-21.1-cinnamon-64bit.iso",
+            "alias": "1 Linux Mint x64 (Cinnamon desktop)"
+        },
+        {
+            "image": "/imgs/archlinux-x86_64.iso",
+            "alias": "2 Arch Linux x64"
+        },
+        {
+            "image": "/imgs/xubuntu-22.04.2-desktop-amd64.iso",
+            "alias": "3 X-Ubuntu x64 (XFCE desktop)"
+        },
+        {
+            "image": "/imgs/Windows10PE-64bit.iso",
+            "alias": "4 Windows 10 PE x64"
+        },
+        {
+            "image": "/imgs/Windows7PE-64x.iso",
+            "alias": "5 Windows 7 PE x64"
+        },
+        {
+            "image": "/imgs/WindowsXP-PE.iso",
+            "alias": "6 Windows XP PE x32"
+        }
+    ],
+    "menu_tip":{
+        "left": "16%",
+        "top": "75%",
+        "color": "red",
+        "tips":[
+            {
+                "image": "/imgs/linuxmint-21.1-cinnamon-64bit.iso",
+                "tip": "Starts Linux Mint x86_64 with Cinnamon desktop (DEFAULT item)"
+            },
+            {
+                "image": "/imgs/archlinux-x86_64.iso",
+                "tip": "Starts Arch Linux x86_64"
+            },
+            {
+                "image": "/imgs/xubuntu-22.04.2-desktop-amd64.iso",
+                "tip": "Starts Ubuntu x86_64 with XFCE desktop"
+            },
+            {
+                "image": "/imgs/Windows10PE-64bit.iso",
+                "tip": "Starts Windows 10 Preinstallation Environment 64 bit"
+            },
+            {
+                "image": "/imgs/Windows7PE-64x.iso",
+                "tip": "Starts Windows 7 Preinstallation Environment 64 bit"
+            },
+            {
+                "image": "/imgs/WindowsXP-PE.iso",
+                "tip": "Starts Windows XP Preinstallation Environment 32 bit"
+            }
+        ]
+    },
+    "menu_class":[
+        {
+            "key": "archlinux",
+            "class": "arch"
+        },
+        {
+            "key": "linuxmint",
+            "class": "mint"
+        },
+        {
+            "key": "xubuntu",
+            "class": "ubuntu"
+        },
+        {
+            "key": "Windows10",
+            "class": "win10"
+        },
+        {
+            "key": "Windows7",
+            "class": "win"
+        },
+        {
+            "key": "WindowsXP",
+            "class": "winXP"
+        }
+    ],
+    "image_list":[
+        "/imgs/linuxmint-21.1-cinnamon-64bit.iso",
+        "/imgs/archlinux-x86_64.iso",
+        "/imgs/xubuntu-22.04.2-desktop-amd64.iso",
+        "/imgs/Windows10PE-64bit.iso",
+        "/imgs/Windows7PE-64x.iso",
+        "/imgs/WindowsXP-PE.iso"
+    ],
+    "persistence":[
+        {
+            "image": "/imgs/linuxmint-21.1-cinnamon-64bit.iso",
+            "backend":[
+                "/persistence/linuxmint.dat"
+            ]
+        }
+    ]
+}
